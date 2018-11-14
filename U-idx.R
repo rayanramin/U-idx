@@ -24,7 +24,7 @@ UX_TC <- function(Y) {
     z <- sum(cond2 | cond1)
     AllU <- sum(u) / z * 1e3
  
-    UDF <-  data.frame("POS" = X$POS. , "CtoT" = t ,  "GtoA" = a , "CtoT_GtoA" = u)
+    UDF <-  data.frame("POS" = X$POS , "CtoT" = t ,  "GtoA" = a , "CtoT_GtoA" = u)
 
     return(list(CtoT_indx = AllC , GtoA_indx = AllG ,  U_indx = AllU , Number_of_TCs = nc, Number_of_GAs = ng , Number_of_TC_GA = z,  Out = UDF  ))
 }
@@ -51,7 +51,7 @@ UX_NC <- function(Y) {
     z <- sum(cond2 | cond1)
     AllU <- sum(u) / z * 1e3
  
-    UDF <-  data.frame("POS" = X$POS. , "CtoT" = t ,  "GtoA" = a , "CtoT_GtoA" = u)
+    UDF <-  data.frame("POS" = X$POS , "CtoT" = t ,  "GtoA" = a , "CtoT_GtoA" = u)
 
     return(list(CtoT_indx = AllC , GtoA_indx = AllG ,  U_indx = AllU , Number_of_Cs = nc, Number_of_Gs = ng , Number_of_C_G = z,  Out = UDF  ))
 }
